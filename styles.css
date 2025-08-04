@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.navbar{
+    background-color: #f3e0c7;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: inline-flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'libre baskerville';
+}
+.nav-links a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'libre baskerville';
+}
+.order-btn{
+    text-decoration: none;
+    font-family: 'libre baskerville';
+    font-weight: 500;
+    border-radius: 15px solid #333;
+    color: #333;
+}
+.order-buttn{
+    border: 2px solid #333;
+    padding: 8px 16px 8px;
+    border-radius: 25px;
+}
+/* End of the header */
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: #f3e0c7;
+    flex-wrap: wrap;
+}
+.hero-txt{
+    max-width: 600px;
+    flex: 1;
+    text-align: center;
+}
+.hero-txt h1{
+    font-size: 1.8rem;
+    font-family: 'libre baskerville';
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+}
+.hero-txt p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    font-family: 'inter';
+}
+.hero-btn{
+    padding: 12px 20px;
+    background-color: #307071;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'libre baskerville';
+    font-weight: 600;
+    border-radius: 25px;
+}
+.hero-image{
+    text-align: center;
+    margin-top: 50px;
+}
+.hero-image img{
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+}
+/* second section styling */
+.one{
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.section-fresh h1{
+    font-size: 2rem;
+    font-family: 'libre baskerville';
+    color: #000;
+    margin-bottom: 30px;
+}
+.section-fresh p{
+    font-size: 1.4rem;
+    font-family: 'manrope';
+    color: #000;
+    margin-bottom: 30px;
+    line-height: 1.6;   
+    margin: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.section-fresh .order-sec{
+    background-color: #351814;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px 8px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'libre baskerville';
+}
+.product{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.product-card{
+    background-color: #fff7ed;
+    border-radius: 8px;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    margin-top: 40px;
+}
+.product-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #000;
+    font-family: 'inter';
+    font-weight: bolder;
+    font-size: 18px;
+}
+.product-card p{
+    font-size: 0.95rem;
+    color: #666;
+    font-family: 'inter';
+}
+.product-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
