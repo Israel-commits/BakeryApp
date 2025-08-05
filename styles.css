@@ -165,3 +165,143 @@
     margin-bottom: 15px;
     border-radius: 8px;
 }
+/* End of 2nd section */
+
+/* 3rd section */
+.Two{
+    background-color: #fff;
+    padding: 0 0;
+}
+.enjoy-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px;
+}
+.enjoy-txt{
+    min-width: 300px;
+    padding: 40px;
+}
+.enjoy-txt h2{
+    font-family: 'libre baskerville';
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    line-height: 4rem;
+    text-transform: capitalize;
+    color: #000;
+}
+.enjoy-txt p{
+    font-family: 'manrope';
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.order-secThree{
+    text-decoration: none;
+    background-color: #351814;
+    color: #fff;
+    font-family: 'libre baskerville';
+    padding: 8px 16px 8px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.girlie{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+/* 4th section */
+.three{
+    background-color: #42234B;
+    display: flex;
+    padding: 0 20px;
+    margin: 0;
+}
+.sourced-section {
+  background-color: #42234B;
+  color: white;
+  padding: 80px 20px 0;
+}
+
+.sourced-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sourced-image {
+  flex: 1;
+  text-align: center;
+}
+
+.sourced-image img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.sourced-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sourced-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sourced-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.learn-btn {
+  display: inline-block;
+  background-color: #fef08a;
+  color: #3c0753;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.learn-btn:hover {
+  background-color: #fde047;
+}
+
+/* bottom scroll bar / caption */
+.sourced-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #2e0034;
+  padding: 14px 20px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.sourced-bar:hover .arrow {
+  transform: translateX(6px);
+}
