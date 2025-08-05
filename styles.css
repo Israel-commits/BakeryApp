@@ -219,62 +219,46 @@
 .Three{
     background-color: #42234B;
     display: flex;
-    padding: 75px;
-    height: 93vh;
+    align-items: center;
+    justify-content: space-between;
+    height: 120vh;
+    overflow: visible;
 }
-.sourced-cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-  flex-wrap: wrap;
+.sourced-cont{
+    display: flex;
 }
-
-.sourced-image {
-  flex: 1;
-  text-align: center;
+.sourced-cont img{
+    width: 800px;
+    height: 800px;
+    padding-left: 40px;
 }
-
-.sourced-image img {
-  width: 100%;
-  max-width: 400px;
-  object-fit: cover;
-  border-radius: 12px;
+.sourced-txt{
+    padding: 80px;
+    margin: 80px;
+    color: #fff;
 }
-
-.sourced-content {
-  flex: 1;
-  min-width: 300px;
+.sourced-txt h2{
+    font-family: 'libre baskerville';
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
-
-.sourced-content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.sourced-txt p{
+    font-family: 'manrope';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 30px;
 }
-
-.sourced-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 25px;
+.btn-three{
+    background-color: #F5E2CB;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 8px 16px 8px;
+    color:#000;
+    font-family: 'libre baskerville';
 }
-
-.learn-btn {
-  display: inline-block;
-  background-color: #fef08a;
-  color: #3c0753;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.learn-btn:hover {
-  background-color: #fde047;
-}
-
 /* bottom scroll bar / caption */
 .sourced-bar {
   display: flex;
@@ -327,4 +311,65 @@
     font-family: 'manrope';
     font-weight: 600;
     font-size: 14px;
+}
+/* End of section 5 */
+/* section 6 */
+.five{
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.txt-btn{
+    text-align: center;
+    gap: 30px;
+    color: #fff;
+}
+.txt-btn h2{
+    font-family: 'libre baskerville';
+    margin-bottom: 30px;
+    color: #fff;
+}
+.txt-btn p{
+    font-family: 'manrope';
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+.txt-btn .btn-four{
+    text-decoration: none;
+    background-color: #307071;
+    padding: 16px;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'libre baskerville';
+    font-size: 20px;
+}
+.img-box{
+    padding: 5px;
+}
+.img-box img{
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.img-box p{
+    font-family: 'inter';
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+/* End of section 6 */
+
+/* footer */
+.footer{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-column h2{
+    font-size: 2rem;
+    font-family: 'libre baskerville';
 }
