@@ -14,7 +14,6 @@
 .navbar{
     background-color: #f3e0c7;
     padding: 20px 0;
-    border-bottom: 1px solid #eaeaea;
 }
 .container{
     width: 90%;
@@ -157,6 +156,7 @@
     font-size: 0.95rem;
     color: #666;
     font-family: 'inter';
+    margin-bottom: 30px;
 }
 .product-card img{
     width: 100%;
@@ -170,19 +170,17 @@
 /* 3rd section */
 .Two{
     background-color: #fff;
-    padding: 0 0;
+    padding: 75px;
+    height: 93vh;
+    overflow: hidden;
 }
 .enjoy-cont{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    padding: 0 20px;
+    gap: 80px;
 }
 .enjoy-txt{
-    min-width: 300px;
     padding: 40px;
 }
 .enjoy-txt h2{
@@ -192,6 +190,7 @@
     line-height: 4rem;
     text-transform: capitalize;
     color: #000;
+    margin-top: 60px;
 }
 .enjoy-txt p{
     font-family: 'manrope';
@@ -210,26 +209,20 @@
     border-radius: 50px;
 }
 .girlie{
-    width: 100%;
-    height: 100%;
+    display: block;
+}
+.girlie img{
     object-fit: cover;
-    border-radius: 12px;
-    margin-top: 3rem;
+    border-radius: 15px;
 }
 /* 4th section */
-.three{
+.Three{
     background-color: #42234B;
     display: flex;
-    padding: 0 20px;
-    margin: 0;
+    padding: 75px;
+    height: 93vh;
 }
-.sourced-section {
-  background-color: #42234B;
-  color: white;
-  padding: 80px 20px 0;
-}
-
-.sourced-container {
+.sourced-cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -304,4 +297,34 @@
 
 .sourced-bar:hover .arrow {
   transform: translateX(6px);
+}
+/* section 5 */
+.four{
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.Review-time{
+    margin: 80px;
+}
+.review{
+    display: flex;
+    box-shadow: #000;
+    gap: 15px;
+}
+.review img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.review h3{
+    font-family: 'inter';
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.review p{
+    font-family: 'manrope';
+    font-weight: 600;
+    font-size: 14px;
 }
