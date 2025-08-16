@@ -9,498 +9,187 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ========== RESPONSIVE STYLES ========== */
 
-/* header */
-.navbar{
-    background-color: #f3e0c7;
-    padding: 20px 0;
-}
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    display: inline-flex;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1rem;
-    font-family: 'libre baskerville';
-}
-.nav-links a{
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000;
-    font-family: 'libre baskerville';
-}
-.order-btn{
-    text-decoration: none;
-    font-family: 'libre baskerville';
-    font-weight: 500;
-    border-radius: 15px solid #333;
-    color: #333;
-}
-.order-buttn{
-    border: 2px solid #333;
-    padding: 8px 16px 8px;
-    border-radius: 25px;
-}
-/* End of the header */
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 
-/* hero section */
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0;
-    background-color: #f3e0c7;
-    flex-wrap: wrap;
-}
-.hero-txt{
-    max-width: 600px;
-    flex: 1;
-    text-align: center;
-}
-.hero-txt h1{
-    font-size: 1.8rem;
-    font-family: 'libre baskerville';
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 30px;
-}
-.hero-txt p{
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #000;
-    margin-bottom: 30px;
-    line-height: 1.4;
-    font-family: 'inter';
-}
-.hero-btn{
-    padding: 12px 20px;
-    background-color: #307071;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'libre baskerville';
-    font-weight: 600;
-    border-radius: 25px;
-}
-.hero-image{
-    text-align: center;
-    margin-top: 50px;
-}
-.hero-image img{
-    width: 100%;
-    max-width: 400px;
-    object-fit: contain;
-}
-/* second section styling */
-.one{
-    background-color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-.section-fresh h1{
-    font-size: 2rem;
-    font-family: 'libre baskerville';
-    color: #000;
-    margin-bottom: 30px;
-}
-.section-fresh p{
-    font-size: 1.4rem;
-    font-family: 'manrope';
-    color: #000;
-    margin-bottom: 30px;
-    line-height: 1.6;   
-    margin: 2rem;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.section-fresh .order-sec{
-    background-color: #351814;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px 8px;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 20px;
-    font-family: 'libre baskerville';
-}
-.product{
-    display: flex;
-    gap: 10px;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.product-card{
-    background-color: #fff7ed;
-    border-radius: 8px;
-    
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    margin-top: 40px;
-}
-.product-card h3{
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: #000;
-    font-family: 'inter';
-    font-weight: bolder;
-    font-size: 18px;
-}
-.product-card p{
-    font-size: 0.95rem;
-    color: #666;
-    font-family: 'inter';
-    margin-bottom: 30px;
-}
-.product-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border-radius: 8px;
-}
-/* End of 2nd section */
+    .nav-links {
+        margin-top: 10px;
+    }
 
-/* 3rd section */
-.Two{
-    background-color: #fff;
-    padding: 50px;
-    height: 131vh;
-    overflow: hidden;
-}
-.sourd-cont img {
-    height: 200px;
-}
-.enjoy-cont{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
-}
-.enjoy-txt h2{
-    font-family: 'libre baskerville';
-    font-size: 2.3rem;
-    margin-bottom: 20px;
-    line-height: 4rem;
-    text-transform: capitalize;
-    color: #000;
-    margin-top: 0;
-}
-.enjoy-txt p{
-    font-family: 'manrope';
-    color: #000;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-.order-secThree{
-    text-decoration: none;
-    background-color: #351814;
-    color: #fff;
-    font-family: 'libre baskerville';
-    padding: 8px 16px 8px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 50px;
-    margin-bottom: 20px;
-}
-.border{
-    border-left: 3px solid #351814;
-    border-radius: 1px;
-    height: 55px;
-    margin-bottom: 20px;
-}
-.border h3 {
-    font-family: 'inter';
-    font-weight: 700;
-    font-size: 18px;
-    margin: 30px 0 0;
-    margin-bottom: 10px;
-    padding-left: 10px;
-}
-.border p {
-    font-size: 16px;
-    padding-left: 10px;
-}
-.place h3 {
-    font-family: 'inter';
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.place p {
-    font-size: 14px;
-    color: #666;
-}
-.girlie{
-    display: block;
-}
-.girlie img{
-    border-radius: 15px;
-    height: 600px;
-}
-/* 4th section */
-.bakery-section {
-  display: flex;
-  align-items: center;
-  background-color: #42234B; /* purple background */
-  color: white;
-  height: 70vh;
-  padding: 50px;
-  position: relative;
-  
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .enjoy-cont {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .bakery-section {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .left-image img {
+        max-width: 300px;
+    }
+
+    .review {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .four {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .five {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }
 
-.left-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-}
-.left-image img {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  top: -28px; 
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-txt h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-txt p {
+        font-size: 1rem;
+    }
+
+    .product {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .enjoy-txt h2 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .girlie img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bakery-section {
+        padding: 20px;
+    }
+
+    .top-cake img {
+        width: 200px;
+        height: auto;
+    }
+
+    .bottom-bar {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .review img {
+        width: 100%;
+        height: auto;
+    }
+
+    .txt-btn p {
+        font-size: 16px;
+    }
+
+    .txt-btn .btn-four {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .footer-col-logo h2 {
+        font-size: 1.8rem;
+    }
 }
 
-.right-content {
-  flex: 1;
-  position: relative;
-  padding: 20px 40px;
-}
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-txt h1 {
+        font-size: 1.3rem;
+    }
 
-.right-content h2 {
-    font-family: 'libre baskerville';
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    margin-top: 40px;
-}
+    .hero-txt p {
+        font-size: 0.9rem;
+    }
 
-.right-content p {
-    font-family: 'manrope';
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 1.4;
-    margin-bottom: 30px;
-}
+    .section-fresh h1 {
+        font-size: 1.6rem;
+    }
 
-.btn {
-  background-color: #F5E2CB; 
-  color: #000;
-  padding: 12px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'libre baskerville';
-}
-.fa-solid {
-    padding: 2px 5px 0;
-}
-.top-cake {
-  position: absolute;
-  top: -100px; /* moves cake up */
-  right: 0;
-}
+    .section-fresh p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
 
-.top-cake img {
-  width: 350px; /* bigger cake size */
-  height: 140px;
-  margin-bottom: 20px;
-}
-.bottom-bar {
-  position: absolute;
-  bottom: 0;
-  margin: 0 80px 20px;
-  left: 20px;
-  width: 460px;
-  box-shadow: rgba(0,0,0,0.06);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(30px);
-  border-radius: 8px;
-  padding: 15px 20px 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: space-between;
-}
-.bar-btn {
-  background-color: #fff;
-  border: none;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: #000;
-}
-.bar-txt {
-    font-family: 'inter';
-    font-size: 16px;
-}
-/* section 5 */
-.four{
-    display: flex;
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-}
-.Review-time{
-    margin: 80px;
-}
-.review{
-    display: flex;
-    box-shadow: #000;
-    gap: 15px;
-}
-.review img{
-    object-fit: cover;
-    border-radius: 20px;
-}
-.review h3{
-    font-family: 'inter';
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.review p{
-    font-family: 'manrope';
-    font-weight: 600;
-    font-size: 14px;
-}
-/* End of section 5 */
-/* section 6 */
-.five{
-    display: flex;
-    background-image: url(/inages/cake\ deco.jpg);
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-}
-.txt-btn{
-    text-align: center;
-    gap: 30px;
-    color: #fff;
-}
-.txt-btn h2{
-    font-family: 'libre baskerville';
-    margin-bottom: 30px;
-    color: #fff;
-}
-.txt-btn p{
-    font-family: 'manrope';
-    margin-bottom: 50px;
-    font-size: 22px;
-}
-.txt-btn .btn-four{
-    text-decoration: none;
-    background-color: #307071;
-    padding: 16px;
-    border-radius: 50px;
-    color: #fff;
-    font-family: 'libre baskerville';
-    font-size: 20px;
-}
-.img-box{
-    padding: 5px;
-}
-.img-box img{
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.img-box p{
-    font-family: 'inter';
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-}
-/* End of section 6 */
+    .enjoy-txt h2 {
+        font-size: 1.5rem;
+    }
 
-/* footer */
-footer {
-  background-color: #fff;
-  padding: 50px;
-  font-size: 12px;
-  width: 100%;
-}
+    .order-secThree,
+    .section-fresh .order-sec,
+    .hero-btn {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 40px;
-}
-.footer-col-logo h2{
-    font-family: 'libre baskerville';
-    font-size: 2.5rem;
-    color: #000;
-    padding-left: 0;
-}
-.footer-col p{
-    color: #666;
-    font-family: 'inter';
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
+    .right-content h2 {
+        font-size: 1.5rem;
+    }
 
-.footer-col ul li {
-  margin-bottom: 15px;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: 'manrope';
-}
+    .right-content p {
+        font-size: 0.9rem;
+    }
 
-.footer-col a {
-  text-decoration: none;
-  color: #2a0d0d;
-}
-.social-icons {
-    display: flex;
-    color: #000;
-    font-size: 20px;
-    gap: 5px;
-}
+    .footer-col-logo h2 {
+        font-size: 1.5rem;
+    }
 
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 20px;
-}
-.footer-bottom p{
-    font-family: 'inter';
-    font-weight: 600;
-    font-size: 12px;
-    color: #000;
-}
-.footerBottom a{
-    text-decoration: none;
-    color: #000;
-    font-family: 'inter';
-    font-weight: 600;
-    font-size: 12px;
-    gap: 30px;
-}
-.Privacy {
-    padding-right: 30px;
+    .footer-col p,
+    .footer-col ul li,
+    .footer-bottom p {
+        font-size: 12px;
+    }
 }
